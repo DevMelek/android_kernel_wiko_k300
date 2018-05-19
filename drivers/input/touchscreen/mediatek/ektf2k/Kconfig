@@ -1,0 +1,9 @@
+#
+# Touchscreen driver configuration
+#
+
+
+config TOUCHSCREEN_MTK_ELAN2K
+	bool "touchscreen driver elan2k"
+	default n
+
