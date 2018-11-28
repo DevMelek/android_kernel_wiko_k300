@@ -287,6 +287,11 @@ extern LCM_DRIVER ili9806e_k200_fwvga_dsi_vdo_ykl_lcm_drv;
 extern LCM_DRIVER ili9806e_k200_fwvga_dsi_vdo_hlt_lcm_drv;
 extern LCM_DRIVER gc9503v_k200_fwvga_dsi_vdo_hlt_lcm_drv;
 extern LCM_DRIVER st7701s_fwvga_dsi_vdo_ykl_lcm_drv;
+extern LCM_DRIVER hx8394f_hd_dsi_vdo_3lanes_txd_lcm_drv; /* v3702 */
+extern LCM_DRIVER ili9881c_hd_dsi_vdo_3lanes_dj_lcm_drv;
+extern LCM_DRIVER ili9881c_hd_dsi_vdo_3lanes_txd_lcm_drv;
+extern LCM_DRIVER ili9881c_hd_dsi_vdo_3lanes_zgd_lcm_drv;
+
 #ifdef BUILD_LK
 extern void mdelay(unsigned long msec);
 #endif

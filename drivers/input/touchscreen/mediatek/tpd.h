@@ -30,6 +30,10 @@
 #include <linux/kobject.h>
 #include <linux/regulator/consumer.h>
 
+// v3702
+#ifdef CONFIG_PROJECT_K300
+#undef CONFIG_PROJECT_K300
+#endif
 
 /*debug macros */
 /*#define TPD_DEBUG */

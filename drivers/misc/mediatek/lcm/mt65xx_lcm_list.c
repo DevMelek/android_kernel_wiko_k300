@@ -55,6 +55,20 @@ LCM_DRIVER *lcm_driver_list[] = {
 #ifdef JD9161_K300_FWVGA_DSI_VDO_HZ
 	&jd9161_k300_fwvga_dsi_vdo_hz_lcm_drv,
 #endif
+
+#if defined(HX8394F_HD_DSI_VDO_3LANES_TXD) /* v3702 */
+	&hx8394f_hd_dsi_vdo_3lanes_txd_lcm_drv,
+#endif
+#if defined(ILI9881C_HD_DSI_VDO_3LANES_DJ)
+	&ili9881c_hd_dsi_vdo_3lanes_dj_lcm_drv,
+#endif
+#if defined(ILI9881C_HD_DSI_VDO_3LANES_TXD)
+	&ili9881c_hd_dsi_vdo_3lanes_txd_lcm_drv,
+#endif
+#if defined(ILI9881C_HD_DSI_VDO_3LANES_ZGD)
+	&ili9881c_hd_dsi_vdo_3lanes_zgd_lcm_drv,
+#endif // v3702
+
 #if defined(ILI9881C_HD720_DSI_VDO_COE_IVO)		//zys
 	&ili9881c_hd720_dsi_vdo_coe_ivo_lcm_drv,
 #endif

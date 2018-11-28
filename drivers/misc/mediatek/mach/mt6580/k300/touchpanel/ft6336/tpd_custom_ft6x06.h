@@ -39,8 +39,7 @@
 #include <linux/wakelock.h>
 #include <linux/ioctl.h>
 
-#define TP_UPDATE_K300
-
+#define tp_name_v3702
 #define TPD_TYPE_CAPACITIVE
 #define CONFIG_TOUCHSCREEN_FT6X05_DISABLE_KEY_WHEN_SLIDE
 
@@ -50,8 +49,6 @@
 //LINE <tp> <DATE20130514> <tp proximity> zhangxiaofei
 //#define TPD_PROXIMITY
 
-//#define CONFIG_TGESTURE_FUNCTION
-
 #if (defined(TPD_TYPE_CAPACITIVE))
 #define TPD_POWER_SOURCE        MT65XX_POWER_COUNT_END
 #define TPD_I2C_NUMBER           0
@@ -59,9 +56,10 @@
 #define TPD_WAKEUP_DELAY         100
 #endif
 
-
-//#define TPD_HAVE_BUTTON
-
+#ifdef CONFIG_PROJECT_V3702_BLU_US
+#else
+#define TPD_HAVE_BUTTON
+#endif
 #ifdef TPD_HAVE_BUTTON
 
 #define TPD_YMAX_NB	       1360// 900
@@ -244,10 +242,8 @@ static int ft6x06_file_fw_data_len = 0;
 #define FTS_CTP_VENDOR_SHENYUE      (0xA0)
 #define FTS_CTP_VENDOR_HOLITECH      (0x82)
 #define FTS_CTP_VENDOR_HONGZHAN	(0x64)
-#define FTS_CTP_VENDOR_YIJIAN	(0x86)
-#define FTS_CTP_VENDOR_ZHONGGUAGNDIAN	(0x17)
-#define FTS_CTP_VENDOR_YIJIAN_PAIZU	(0xA8)
 #define FTS_CTP_VENDOR_YIXING	(0x11)
+
 
 int fts_6x06_isp_init( tinno_ts_data *ts); 
 void fts_6x06_isp_exit(void);
