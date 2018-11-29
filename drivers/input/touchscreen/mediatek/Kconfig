@@ -195,6 +195,10 @@ config TOUCHSCREEN_MTK_SYNAPTICS_3320_50
 	bool "Synaptics 5.0inch for Mediatek package"
 	default n
 
+
+source "drivers/input/touchscreen/mediatek/ektf2k_v3702/Kconfig"
+source "drivers/input/touchscreen/mediatek/ft6336_v3702/Kconfig"
+
 config TOUCHSCREEN_UNIFIED_DRIVER_4
 	bool "LGE Unified driver Ver4.0"
 	depends on I2C

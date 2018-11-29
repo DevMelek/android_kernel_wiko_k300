@@ -10,11 +10,12 @@ obj-y   +=  mtk_tpd.o tpd_button.o tpd_calibrate.o tpd_debug.o \
 endif
 
 obj-$(CONFIG_TOUCHSCREEN_MTK)   += tpd_common_probe.o
-
 obj-$(CONFIG_TOUCHSCREEN_MTK)	+=  GT1151/
 obj-$(CONFIG_TOUCHSCREEN_MTK_GT1151TB)	+=  GT1151TB/
-obj-$(CONFIG_TOUCHSCREEN_MTK_EKTF2K_V3702)	+=  ektf2k_v3702/
-obj-$(CONFIG_TOUCHSCREEN_MTK_FT6336)	+=  ft6336_v3702/
+
+obj-$(CONFIG_TOUCHSCREEN_MTK_EKTF2K_v3702)	+=  ektf2k_v3702/
+obj-$(CONFIG_TOUCHSCREEN_MTK_FT6336_v3702)  +=  ft6336_v3702/
+
 obj-$(CONFIG_TOUCHSCREEN_MTK_GT9XXTB_HN_NEW)	+=  gt9xxtb_hn_new/
 obj-$(CONFIG_TOUCHSCREEN_MTK_GT9XX_HOTKNOT)	+=  GT9XX_hotknot/
 obj-$(CONFIG_TOUCHSCREEN_MTK_GT9XX_HOTKNOT_PHONE)	+=  GT9XX_hotknot_phone/

@@ -1,8 +1,8 @@
-config TOUCHSCREEN_MTK_FT6336_v3702
-	bool "FT6336 for v3702"
+config TOUCHSCREEN_MTK_EKTF2K_v3702
+	bool "EKTF2K for v3702"
 	default n
 	help
-	  Say Y here if you have FT6336 touch panel.
+	  Say Y here if you have EKTF2K touch panel.
 
 	  If unsure, say N.
 
